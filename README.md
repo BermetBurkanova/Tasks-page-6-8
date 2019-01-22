@@ -1,4 +1,4 @@
-# Tasks-page-6-end
+# Tasks-page-6-8
 # task 1
 for (var i = 0; i < 10; i++) {
     setTimeout(function() {
