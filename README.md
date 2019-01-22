@@ -5,7 +5,7 @@ for (var i = 0; i < 10; i++) {
         console.log(i);
     }
 }
-# Что выведет консоль и почему? Nothing is going to happens, since there is a SyntaxError. We have to put ',)' right after 'console.log(i);}' then it will work 
+# Что выведет консоль и почему? Nothing is going to happen, since there is a SyntaxError. We have to put ',)' right after 'console.log(i);}' then it will work 
 
 # task 2
 var today = new Date();
