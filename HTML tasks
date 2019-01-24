@@ -1,1 +1,116 @@
+#task 1
+var element_1 = document.getElementById('string-1'),
+element_2 = document.getElementById('string-2'),
+element_3 = document.getElementById('string-3'),
+element_4 = document.getElementById('string-4'),
+element_5 = document.getElementById('string-5'),
+element_6 = document.getElementById('string-6');
+console.log(element_3.innerHTML);
+console.log(element_5.innerHTML);
+console.log(element_2.innerHTML);
+console.log(element_6.innerHTML);
+console.log(element_4.innerHTML);
+console.log(element_1.innerHTML);
+#task 2
+var el = document.getElementById("element1");
 
+el.style.color = "red";
+
+var el1 = document.getElementById("element2");
+
+el1.style.color = "red";
+
+
+var el2 = document.getElementById("element3");
+
+el2.style.color = "red";
+
+var el3 = document.getElementById("element4");
+
+el3.style.color = "green";
+
+var el4 = document.getElementById("element5");
+
+el4.style.color = "green";
+
+var el5 = document.getElementById("element6");
+
+el5.style.color = "green";
+
+# taks 3
+<ol id="todo-list">
+	<li class="task">Buy lemonade</li>
+	<li class="task">Make toasts</li>
+	<li class="task">Repair car</li>
+	<li class="task">Play games</li>
+	<li class="task">Pet a cat</li>
+</ol>
+# task 4
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <article>
+      <h3>What is Lorem Ipsum?</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+      <h3>Where does it come from?</h3>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and Evil" by Cicero</p>
+      <h3>Why do we use it?</h3>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+  </article>
+  
+</body>
+ <script>
+    var ptag = document.getElementById('idName');
+    var newhr = document.createElement('hr');
+ptag.insertAdjacentElement('afterend', newhr);
+  </script>
+</html>
+#task 5
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="cart-items">
+	<div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+	<div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+	<div class="item">Bread<span class="qty">x 2</span></div>
+	<div class="item">Cheese<span class="qty">x 1</span></div>
+	<div class="item">Chocolate bar<span class="qty">x 3</span></div>
+</div>
+</body>/
+</html>
+  function remove() {
+ var item = document.getElementById('Cola 1.5');
+ item.parentNode.removeChild(item);
+};
+
+function replace (){
+  var myEl = document.getElementById("Chocolate bar");
+  var myEl2 = document.createElement("Canned Fish");
+  myEl2.innerHTML = "replaced!";
+  myEl.parentNode.replaceChild( myEl2);
+}
+# task 6
+ function Accepter(){
+      var button = document.getElementById('addTask');
+      var taskWrap = document.getElementById('myTasks');
+      function createLi(value){
+        var li = document.createElement('li');
+        li.innerText = value;
+        taskWrap.appendChild(li);
+      }
+      function getTask(){
+        var text = prompt("write your text:","");
+        if(text.length > 0){
+          createLi(text);
+        }
+      }
+      button.addEventListener('click',getTask);
+    } // ????
